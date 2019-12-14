@@ -1,0 +1,146 @@
+
+html, body {
+    height: 100%;
+    background: url(/background/background.jpg) no-repeat  center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+
+  
+}
+body {
+    margin: 0;
+}
+
+.mapContainer{
+    width: 100%;
+    overflow:auto;
+    text-align: center;
+    max-width: 1598px;
+    max-height: 640px;
+    
+
+} 
+
+.map1{
+     background: url(/maps/map1.png); 
+     margin: 0;
+     padding: 0;
+     border-radius: 25px;
+     width: 1600px;
+     height: 640px;
+
+}
+
+.map2{
+    background: url(/maps/map2.png); 
+     margin: 0;
+     padding: 0;
+     border-radius: 25px;
+     width: 1600px;
+     height: 640px;
+
+
+}
+.events{
+    color: white;
+    font-family: 'Dragon';
+    
+}
+.statsContainer{
+   
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid white ;
+    padding: 10px;
+    max-width: 150px;
+    height: 100px; 
+    margin: 25px;
+    text-align: left;
+    color: white;
+    font-family: 'Dragon';
+    /* padding: .1em */
+
+}
+.gameContainer {
+    display:flex;
+    flex-direction:column;
+    margin: 0;
+    padding: 0;
+     align-items: center;
+
+}
+#title {
+    text-align: center;
+}
+
+.character {
+    margin: 0;
+    padding: 0;
+    background: url(/player/Wizard.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .characterDirection2{
+    margin: 0;
+    padding: 0;
+    background: url(/player/Wizard_Direction2.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  
+
+.gameTitle {
+      text-align: center;
+  } 
+.topContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position:absolute; */
+    left:0;
+    right:0;
+    max-width: 1598px;
+    width: 100%;
+   
+}
+.dice{
+    height: 52px;
+    width: 52px
+}
+.butn{
+    background-color: black;
+    color: white;
+    margin: 15px;
+}
+
+
+@font-face {
+    font-family: 'Adventure';
+    src: url("./fonts/Adventure_ReQuest.woff") format("woff");
+
+}
+@font-face {
+    font-family: 'Dragon';
+    src: url("./fonts/Dragonwick.ttf") format("ttf");
+
+}
+@font-face {
+    font-family: 'DragonBold';
+    src: url("./fonts/DragonWickBold.ttf") format("ttf");
+
+}
+#title{
+    font-family: 'Adventure';
+    font-size: 4em;
+    color: white;
+    padding: .3em;
+    margin: 0em;
+    
+}
