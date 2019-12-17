@@ -1,9 +1,9 @@
 
 
-const robbedFood = `Oh no! you've been robbed. The theives took two days of food`;
-const robbedWater = `Oh no! you've been robbed. The theives took two days of water`;
-const injured = `You sprained you ankle and need to rest . You make no forward pogress, but consume 1 days worth of supplies`;
-const robbedMoney = `Oh no! you've been robbed. The theives took 15 Coins`;
+const robbedFood = `Oh no! you've been robbed. The thieves took two days of food.`;
+const robbedWater = `Oh no! you've been robbed. The thieves took two days of water.`;
+const injured = `You sprained your ankle and need to rest . You make no forward pogress, but consume 1 days worth of supplies.`;
+const robbedMoney = `Oh no! you've been robbed. The thieves took 15 Coins.`;
 let robbedF = false
 let robbedW = false
 let robbedM = false
@@ -11,8 +11,8 @@ let ouch = false
 
 
 let health = 100
-let water = 17
-let food = 17
+let water = 20
+let food = 20
 let money = 80
 let foodDecrease = 1
 let waterDecrease = 1
@@ -28,27 +28,28 @@ let noDeduct = () =>
 
 let setWater = () =>
 {
-    water = 17
+    water = 21
     food = food+1
 }
 let setFood = () =>
 {
-    food = 17
+    food = food+11
     water = water+1
 
 }
 
-let buyAll = () =>{
 
+let buyAll = () =>{
     let canBuy = money / 5
     money = money - (5 * canBuy)
-    food = food + canBuy
-    water = 17
+    food = food + canBuy -2
+    water = 20
     noDeduct()
 }
 
 let justWaters = () =>{
-    water = 17
+    water = 20
+    food = food-2
     noDeduct()
     
 }
@@ -80,6 +81,7 @@ const generateEvents = () => {
 let calculateHealth = () =>
 
 {
+  // console.log('above food ' + food)
     if (robbedF) {
         foodDecrease = foodDecrease + 2
         
@@ -134,6 +136,7 @@ let calculateHealth = () =>
           water: water,
           money: money
       }
+      // console.log('food ' + food )
 
       return stats
 

@@ -8,8 +8,6 @@ html, body {
     background-size: cover;
     padding: 0;
     margin: 0;
-
-  
 }
 body {
     margin: 0;
@@ -21,8 +19,6 @@ body {
     text-align: center;
     max-width: 1598px;
     max-height: 640px;
-    
-
 } 
 
 .map1{
@@ -32,6 +28,7 @@ body {
      border-radius: 25px;
      width: 1600px;
      height: 640px;
+     display: block;
 
 }
 
@@ -43,42 +40,27 @@ body {
      width: 1600px;
      height: 640px;
 
-
 }
-.events{
-    color: white;
-    font-family: 'Dragon';
-    
-}
-.statsContainer{
+.startScreen{
+   display:flex;
+   padding-left: 125px;
    
-    display: flex;
-    width: 100%;
-    border-radius: 25px;
-    border: 2px solid white ;
-    padding: 10px;
-    max-width: 150px;
-    height: 100px; 
-    margin: 25px;
-    text-align: left;
-    color: white;
-    font-family: 'Dragon';
-    /* padding: .1em */
-
-}
+} 
+   
 .gameContainer {
     display:flex;
     flex-direction:column;
     margin: 0;
     padding: 0;
-     align-items: center;
+    align-items: center;
+    max-width: 100%;
 
 }
 #title {
     text-align: center;
 }
 
-.character {
+.wizard {
     margin: 0;
     padding: 0;
     background: url(/player/Wizard.png) ;
@@ -86,10 +68,42 @@ body {
     width: 60px;
     height: 70px;
   }
-  .characterDirection2{
+  .wizardDirection2{
     margin: 0;
     padding: 0;
     background: url(/player/Wizard_Direction2.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .rabbit {
+    margin: 0;
+    padding: 0;
+    background: url(/player/Rabbit.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .rabbitDirection2{
+    margin: 0;
+    padding: 0;
+    background: url(/player/Rabbit_Direction2.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .steve {
+    margin: 0;
+    padding: 0;
+    background: url(/player/Steve.png) ;
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .steveDirection2{
+    margin: 0;
+    padding: 0;
+    background: url(/player/Steve_Direction2.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -103,24 +117,107 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    /* position:absolute; */
     left:0;
     right:0;
     max-width: 1598px;
     width: 100%;
+    margin: 30px;
+    text-align: center;
+    /* display: grid;   */
+
+    /* display: inline-grid;
+    grid-gap: 5px;  
+    grid-template-columns: 1fr 1fr 1fr; */
+   
+}
+.textContent{
+    flex: 8;
+    justify-content: center;
+}
+.rollContainer{
+    flex: 2;
+    text-align: center;
+
+}
+.events{
+    color: white;
+    font-family: 'DragonBold';
+    font-size: 1.5em;
+}
+
+.statsContainer{
+   flex: 2;
+    border-radius: 25px;
+    border: 2px solid white ;
+    padding: 10px;
+    max-width: 175px;
+    max-height: 310px;
+    margin: 25px;
+    align-items: center;
+    color: white;
+    font-family: 'DragonBold';
+    font-size: 1.5em;
+}
+.stats{
+    text-align: left;
+}
+.wizardStart{
+    flex: 4;
+   
+}
+.steveStart{
+    flex: 4;
+  
+}
+.rabbitStart{
+    flex: 4;
    
 }
 .dice{
-    height: 52px;
-    width: 52px
+    height: 92px;
+    width: 92px
 }
 .butn{
     background-color: black;
     color: white;
     margin: 15px;
+    font-family: 'DragonBold';
+    font-size: 1.5em;
+    border-radius: 25px;
+    border: 2px solid white ;
+    padding: 10px;
+    text-align: center;
+
+}
+.gameDescription{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 50px;
+    font-family: 'Adventure';
+}
+.gameOver{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 700px;
+    padding: 35px
+
 }
 
-
+.finishContainer{
+    padding: 100px;
+    width: auto;
+    height: 100%;
+    font-family: 'Adventure';
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    content: center;
+}
+.endGameContainer{
+    text-align: center;
+}
 @font-face {
     font-family: 'Adventure';
     src: url("./fonts/Adventure_ReQuest.woff") format("woff");

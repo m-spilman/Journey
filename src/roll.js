@@ -1,5 +1,11 @@
+import { resetForMapLoop } from "./Components/DisplayTextComp"
 
 let sumOfRolls =0
+let resetSumOfRollsAndDialogue = () =>
+{
+    sumOfRolls = 0
+    resetForMapLoop()
+}
 let roll =() => {
     let numberRolled = (Math.floor(Math.random()*6)+1)
 
@@ -24,10 +30,5 @@ let roll =() => {
     return returnedItems
         
 }
-export {roll}
+export {roll, resetSumOfRollsAndDialogue}
 
-
-
-// let positionOnBoard = sumOfRolls + numberRolled
-// let playerPositionFromTop = positionFromTopMap[positionOnBoard]
-// let playerPositionFromLeft = positionFromLeftMap[positionOnBoard]

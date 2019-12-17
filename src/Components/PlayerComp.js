@@ -4,9 +4,6 @@ let newArrayPositin = 0
 let positionSet = false
 let playerClass = 'character'
 
-const changeCharDireciton = () =>{
-  playerClass = 'characterDirection2'
-}
 
 const changeCourse = () => {
 changePath = true
@@ -16,14 +13,18 @@ changePath = true
 
 
 
-const Player = props => {
- 
+const Player = (props) => {
+if(changePath === false) playerClass = props.player
+if(changePath === true)  playerClass = props.player + 'Direction2'
 
-if(props.location > 94) playerClass = 'character'
-if(changePath && positionSet == false) {
+if(props.location >= 13) playerClass = props.player
+
+if(changePath && positionSet === false) {
   newArrayPositin = props.location
   positionSet = true
 }
+
+
 
 
 const positionFromTop = ['625px','593px', '561px','529px','497px','465px', //6
@@ -171,9 +172,6 @@ const positionFromLeftCourse2= [
 ]
 
 
-
-
-
 if(changePath === false)
 {
   return (
@@ -194,8 +192,8 @@ if(changePath === true)
     <div
       className= {playerClass}
       style={{
-        top: positionFromTopCourse2[props.location - newArrayPositin],
-        left: positionFromLeftCourse2[props.location - newArrayPositin]
+        top: positionFromTopCourse2[props.location],
+        left: positionFromLeftCourse2[props.location]
       }}
     ></div>
   )
@@ -204,7 +202,7 @@ if(changePath === true)
 
 };
 
-export {Player, changeCharDireciton, changeCourse}
+export {Player, changeCourse}
 
 
 
