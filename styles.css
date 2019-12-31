@@ -22,7 +22,7 @@ body {
 } 
 
 .map1{
-     background: url(/maps/map1.png); 
+     background: url(./maps/map1.png); 
      margin: 0;
      padding: 0;
      border-radius: 25px;
@@ -33,7 +33,7 @@ body {
 }
 
 .map2{
-    background: url(/maps/map2.png); 
+    background: url(./maps/map2.png); 
      margin: 0;
      padding: 0;
      border-radius: 25px;
@@ -63,7 +63,7 @@ body {
 .wizard {
     margin: 0;
     padding: 0;
-    background: url(/player/Wizard.png) ;
+    background: url(./player/Wizard.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -71,7 +71,7 @@ body {
   .wizardDirection2{
     margin: 0;
     padding: 0;
-    background: url(/player/Wizard_Direction2.png) ;
+    background: url(./player/Wizard_Direction2.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -79,7 +79,7 @@ body {
   .rabbit {
     margin: 0;
     padding: 0;
-    background: url(/player/Rabbit.png) ;
+    background: url(./player/Rabbit.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -87,7 +87,7 @@ body {
   .rabbitDirection2{
     margin: 0;
     padding: 0;
-    background: url(/player/Rabbit_Direction2.png) ;
+    background: url(./player/Rabbit_Direction2.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -95,7 +95,7 @@ body {
   .steve {
     margin: 0;
     padding: 0;
-    background: url(/player/Steve.png) ;
+    background: url(./player/Steve.png) ;
     position: relative;
     width: 60px;
     height: 70px;
@@ -103,7 +103,7 @@ body {
   .steveDirection2{
     margin: 0;
     padding: 0;
-    background: url(/player/Steve_Direction2.png) ;
+    background: url(./player/Steve_Direction2.png) ;
     position: relative;
     width: 60px;
     height: 70px;
