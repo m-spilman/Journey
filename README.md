@@ -31,7 +31,11 @@ If  a player was withing this range of locations AND you were on map 1 then disp
 
 ### 3. Structure
 
+Public folder contains various folders for images and fonts - dice, maps, player, etc.
+Src folder contains my JS files and a folder, 'Components' which contains the various react components: 'MapComp, 'PlayerComp', 'RollComp' etc.
 
+**Notes:**
+The code has few comments. This project was my first dive into React and was completed in 2 or 3 weeks. Despite the lack of internal comments the code should be relatively straight forward as things are named appropriately: 'calculateHealth', 'setFood', 'generateEvents' and so on. I am sure there are mistakes, things that could have been done better. Again, this was my first React project as part of my Digitalcrafts class and once finished, we were moving on to the next project.
 
 
 
