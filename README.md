@@ -7,7 +7,7 @@ robbers may steal your food or coins in the night. Players have the chance to re
 <img src="read_me_images/map1.png" width="600">  <img src="read_me_images/map2.png" width="600"> 
 
 ### CORE
-This game is 100% font end. State management is controlled using React. Everything else is 100% vanilla Javascript and custom CSS. There are no libraries or frameworks. 
+This game is 100% front end. State management is controlled using React. Everything else is 100% vanilla Javascript and custom CSS. There are no libraries or frameworks. 
 
 # Development. 
 ### 1.  Game Board. 
