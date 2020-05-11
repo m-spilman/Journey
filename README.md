@@ -2,7 +2,7 @@
 Journey is a turn based RPG. Movement is controlled through dice rolls. The player starts with food,
 water, coins, and health. Each dice roll moves the player forward and counts as a single day of travel. 
 Each day the player loses 1 day of food and water. Random events happen along the way; 
-robbers may steal your food or coins in the night. Players have the chance to replenish supplies at various stages in the game.
+robbers may steal your food or coins in the night. Players have the chance to replenish supplies at various stages in the game. Play here -  https://m-spilman.github.io/Journey/
 
 <img src="read_me_images/map1.png" width="600">  <img src="read_me_images/map2.png" width="600"> 
 
