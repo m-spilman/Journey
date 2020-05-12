@@ -14,20 +14,20 @@ This game is 100% front-end. State management is controlled using React. 100% va
 
   The initial board was built using a matrix grid system and a nested loop. While this was functional in building the board, I ultimately decided it would be cumbersome to design the detailed map / board I envisioned. I felt this was more a role for Photoshop / Illustrator or something visual where I could see my product in its entirety as a I worked in realtime. I found this project on git - https://github.com/ReactUniversity/037-building-an-online-rpg-game-part-2
   
-  This is an HTML5 drag and drop map builder - In short I could drag and drop tiles onto a blank grid system to build a world. Various tiles sets were pulled from https://opengameart.org/ These were mixed and matched to get the look I wanted. They were resized and cut into 32x32 pixels tiles. I quickly found that sizing each object to 32x32 would not give the aesthetic I was looking for. Imagnine your character, trees and houses all the same size. - there was no depth. While each of the tiles in the game are 32x32, many objects are comprised of multiple 32x32 tiles. Some trees and houses are composed of four or five 32x32 tiles. Once this was all sorted. I modified the world builder app I had pulled down from git and replaced the tiles with my own. I then tediously dragged and dropped my ever expanding tile sets into the grid to build the product you see here. 
+  This is an HTML5 drag and drop map builder - In short I could drag and drop tiles onto a blank grid system to build a world. Various tiles sets were pulled from https://opengameart.org/ These were mixed and matched to get the look I wanted. They were resized and cut into 32x32 pixel tiles. I quickly found that sizing each object to 32x32 would not give the aesthetic I was looking for. Imagnine your character, trees and houses all the same size. - there was no depth. While each of the tiles in the game are 32x32, many objects are comprised of multiple 32x32 tiles. Some trees and houses are composed of four or five 32x32 tiles. Once this was all sorted. I modified the world builder app I had pulled down from git and replaced the tiles with my own. I then tediously dragged and dropped my ever expanding tile sets into the grid to build the product you see here. 
 
 <img src="read_me_images/builder.png" width="600"> 
 
-Do not think this was an easy task or done in one shot. I was constantly dragging and dropping deciding the size wasn't right. getting the original tile sets, resizing, cutting, replacing, and starting the drag and drop over. 
+Do not think this was an easy task or done in one shot. I was constantly dragging and dropping, deciding the size wasn't right, getting the original tile sets, resizing, cutting, replacing, and starting the drag and drop over. 
   Once I finally had a map completed I had to decided what to do with it - K.I.S.S. Keep it simple stupid. I took a screenshot. I used the image as a background. It would only have to be loaded once, my character could sit on top of it, and I knew moving 1 tile would be 32 pixels. The character could easily be moved using simple CSS.
   
 ### 2. Logic: Random Events and Designated Areas
 
-Right or wrong, I decided the build arrays that contained all the locations a player could be. A total of four were created, two for each of the two maps, each containing a position from top and from left respectively. Each dice roll would move the index of the array. I could then write statements like this
+Right or wrong, I decided the build arrays that contained all the locations a player could be. A total of four were created, two for each of the two maps, each containing he position from the top and from the left respectively. Each dice roll would move the index of the array. I could then write statements like this
 
 if(props.position >= 31 && props.position <=37 && props.map === 'map1') foodSpot = true
 
-If  a player was withing this range of locations AND you were on map 1 then display dialogue - 'Check out that forest! Now might be a good time to see if I can find some food.'
+If  a player was within this range of locations AND you were on map 1 then display dialogue - 'Check out that forest! Now might be a good time to see if I can find some food.'
 
 ### 3. Structure
 
