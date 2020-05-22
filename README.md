@@ -23,7 +23,7 @@ Do not think this was an easy task or done in one shot. I was constantly draggin
   
 ### 2. Logic: Random Events and Designated Areas
 
-Right or wrong, I decided the build arrays that contained all the locations a player could be. A total of four were created, two for each of the two maps, each containing he position from the top and from the left respectively. Each dice roll would move the index of the array. I could then write statements like this
+Right or wrong, I decided the build arrays that contained all the locations a player could be. A total of four were created, two for each of the two maps, each containing the position from the top and from the left respectively. Each dice roll would move the index of the array. I could then write statements like this
 
 if(props.position >= 31 && props.position <=37 && props.map === 'map1') foodSpot = true
 
